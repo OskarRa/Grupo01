@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+		<!-- JS dependencies -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<!-- Bootstrap 4 dependency -->
+		<script src="https://unpkg.com/@popperjs/core@2.11.5/dist/umd/popper.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+		<!-- bootbox code -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/5.5.2/bootbox.min.js"></script>
+		<script src="https://github.com/makeusabrew/bootbox/releases/download/v5.5.2/bootbox.locales.min.js"></script>
+
+		<link rel="stylesheet" href="./lib/style.css" />
+		<script type="module">
+			import * as myList from './lib/index.js';
+
+			window.CANVAS = document.getElementById("tutorial");
+
+			window.insertar_al_inicio = myList.insertar_al_inicio;
+			window.insertar_al_final = myList.insertar_al_final;
+			window.insertar_antes_X = myList.insertar_antes_X;
+			window.inserta_despues_X = myList.inserta_despues_X;
+			window.elimina_inicio = myList.elimina_inicio;
+			window.elimina_ultimo = myList.elimina_ultimo;
+			window.elimina_X = myList.elimina_X;
+			window.elimina_antes_X = myList.elimina_antes_X;
+			window.elimina_despues_X = myList.elimina_despues_X;
+
+		</script>
+
+	</head>
+
+	<body>
+		<div class="container">
+			<br>
+			<div class="titulo">
+				<h1 class="main_title">Proyecto -> Creación de una Lista en JS</h1>
+				<h4 class="sub_title">Curso: Estructura de Datos</h4>
+			</div>
+
+			<canvas id="tutorial" width="700" height="150"></canvas>
+			<div class="botones row justify-content-around">
+				<div class="col-12">
+					<br>
+					<h2 class="text-center">Agregar Elementos:</h2>
+				</div>
+				<button type="button" class="btn btn-info" id="insertar_inicio" onclick="insertar_al_inicio()">Insertar Inicio</button>
+				<button type="button" class="btn btn-info" id="insertar-final" onclick="insertar_al_final()">Insertar al final</button>
+				<button type="button" class="btn btn-info" id="insertar-antes" onclick="insertar_antes_X()">Insertar antes (x)</button>
+				<button type="button" class="btn btn-info" id="insertar-despues" onclick="inserta_despues_X()">Insertar despues (x)</button>
+				<div class="col-12">
+					<br>
+					<h2 class="text-center">Eliminar Elementos:</h2>
+				</div>
+				<button type="button" class="btn btn-info" id="eliminar-inicio" onclick="elimina_inicio()">Eliminar Inicio</button>
+				<button type="button" class="btn btn-info" id="eliminar-final" onclick="elimina_ultimo()">Eliminar Final</button>
+				<button type="button" class="btn btn-info" id="eliminar-x" onclick="elimina_X()">Eliminar (X)</button>
+				<button type="button" class="btn btn-info" id="eliminar-antes" onclick="elimina_antes_X()">Eliminar Antes (x)</button>
+				<button type="button" class="btn btn-info" id="eliminar-despues" onclick="elimina_despues_X()">Eliminar Despues (x)</button>
+			</div>
+		</div>
+	</body>
+</html>
