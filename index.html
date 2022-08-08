@@ -16,19 +16,19 @@
 
 		<link rel="stylesheet" href="./lib/style.css" />
 		<script type="module">
-			import * as myList from './lib/index.js';
+			import * as myList from './lib/LstSimpLig/index.js';
 
 			window.CANVAS = document.getElementById("tutorial");
 
-			window.insertar_al_inicio = myList.insertar_al_inicio;
-			window.insertar_al_final = myList.insertar_al_final;
-			window.insertar_antes_X = myList.insertar_antes_X;
-			window.inserta_despues_X = myList.inserta_despues_X;
-			window.elimina_inicio = myList.elimina_inicio;
-			window.elimina_ultimo = myList.elimina_ultimo;
-			window.elimina_X = myList.elimina_X;
-			window.elimina_antes_X = myList.elimina_antes_X;
-			window.elimina_despues_X = myList.elimina_despues_X;
+			window.lsl_insertar_al_inicio = myList.insertar_al_inicio;
+			window.lsl_insertar_al_final = myList.insertar_al_final;
+			window.lsl_insertar_antes_X = myList.insertar_antes_X;
+			window.lsl_inserta_despues_X = myList.inserta_despues_X;
+			window.lsl_elimina_inicio = myList.elimina_inicio;
+			window.lsl_elimina_ultimo = myList.elimina_ultimo;
+			window.lsl_elimina_X = myList.elimina_X;
+			window.lsl_elimina_antes_X = myList.elimina_antes_X;
+			window.lsl_elimina_despues_X = myList.elimina_despues_X;
 
 			import * as mostrar from './lib/mostrar.js';
 
@@ -69,19 +69,19 @@
 					<div class="col-12">
 						<h2 class="text-center">Agregar Elementos:</h2>
 					</div>
-					<button type="button" class="btn btn-info" id="insertar_inicio" onclick="insertar_al_inicio()">Insertar Inicio</button>
-					<button type="button" class="btn btn-info" id="insertar-final" onclick="insertar_al_final()">Insertar al final</button>
-					<button type="button" class="btn btn-info" id="insertar-antes" onclick="insertar_antes_X()">Insertar antes (x)</button>
-					<button type="button" class="btn btn-info" id="insertar-despues" onclick="inserta_despues_X()">Insertar despues (x)</button>
+					<button type="button" class="btn btn-info" id="insertar_inicio" onclick="lsl_insertar_al_inicio()">Insertar Inicio</button>
+					<button type="button" class="btn btn-info" id="insertar-final" onclick="lsl_insertar_al_final()">Insertar al final</button>
+					<button type="button" class="btn btn-info" id="insertar-antes" onclick="lsl_insertar_antes_X()">Insertar antes (x)</button>
+					<button type="button" class="btn btn-info" id="insertar-despues" onclick="lsl_inserta_despues_X()">Insertar despues (x)</button>
 					<div class="col-12">
 						<br>
 						<h2 class="text-center">Eliminar Elementos:</h2>
 					</div>
-					<button type="button" class="btn btn-info" id="eliminar-inicio" onclick="elimina_inicio()">Eliminar Inicio</button>
-					<button type="button" class="btn btn-info" id="eliminar-final" onclick="elimina_ultimo()">Eliminar Final</button>
-					<button type="button" class="btn btn-info" id="eliminar-x" onclick="elimina_X()">Eliminar (X)</button>
-					<button type="button" class="btn btn-info" id="eliminar-antes" onclick="elimina_antes_X()">Eliminar Antes (x)</button>
-					<button type="button" class="btn btn-info" id="eliminar-despues" onclick="elimina_despues_X()">Eliminar Despues (x)</button>
+					<button type="button" class="btn btn-info" id="eliminar-inicio" onclick="lsl_elimina_inicio()">Eliminar Inicio</button>
+					<button type="button" class="btn btn-info" id="eliminar-final" onclick="lsl_elimina_ultimo()">Eliminar Final</button>
+					<button type="button" class="btn btn-info" id="eliminar-x" onclick="lsl_elimina_X()">Eliminar (X)</button>
+					<button type="button" class="btn btn-info" id="eliminar-antes" onclick="lsl_elimina_antes_X()">Eliminar Antes (x)</button>
+					<button type="button" class="btn btn-info" id="eliminar-despues" onclick="lsl_elimina_despues_X()">Eliminar Despues (x)</button>
 				</div>
 			</div>
 			<div id="LstCirSimpLig"  class="col-12 titulo">
