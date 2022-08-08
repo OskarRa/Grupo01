@@ -30,6 +30,20 @@
 			window.lsl_elimina_antes_X = myList.elimina_antes_X;
 			window.lsl_elimina_despues_X = myList.elimina_despues_X;
 
+			import * as myListCir from './lib/LstCirSimpLig/index.js';
+
+			window.CANVAS2 = document.getElementById("tutorial2");
+
+			window.lcsl_insertar_al_inicio = myListCir.insertar_al_inicio;
+			window.lcsl_insertar_al_final = myListCir.insertar_al_final;
+			window.lcsl_insertar_antes_X = myListCir.insertar_antes_X;
+			window.lcsl_inserta_despues_X = myListCir.inserta_despues_X;
+			window.lcsl_elimina_inicio = myListCir.elimina_inicio;
+			window.lcsl_elimina_ultimo = myListCir.elimina_ultimo;
+			window.lcsl_elimina_X = myListCir.elimina_X;
+			window.lcsl_elimina_antes_X = myListCir.elimina_antes_X;
+			window.lcsl_elimina_despues_X = myListCir.elimina_despues_X;
+
 			import * as mostrar from './lib/mostrar.js';
 
 			window.LstSimpLig = mostrar.LstSimpLig;
@@ -87,24 +101,24 @@
 			<div id="LstCirSimpLig"  class="col-12 titulo">
 				<br>
 				<h1 class="main_title">Lista Circular Simplemente Ligada</h1>
-				<canvas id="tutorial" width="700" height="150"></canvas>
+				<canvas id="tutorial2" width="700" height="150"></canvas>
 				<div class="botones row justify-content-around">
 					<div class="col-12">
 						<h2 class="text-center">Agregar Elementos:</h2>
 					</div>
-					<button type="button" class="btn btn-info" id="insertar_inicio" onclick="insertar_al_inicio()">Insertar Inicio</button>
-					<button type="button" class="btn btn-info" id="insertar-final" onclick="insertar_al_final()">Insertar al final</button>
-					<button type="button" class="btn btn-info" id="insertar-antes" onclick="insertar_antes_X()">Insertar antes (x)</button>
-					<button type="button" class="btn btn-info" id="insertar-despues" onclick="inserta_despues_X()">Insertar despues (x)</button>
+					<button type="button" class="btn btn-info" id="insertar_inicio" onclick="lcsl_insertar_al_inicio()">Insertar Inicio</button>
+					<button type="button" class="btn btn-info" id="insertar-final" onclick="lcsl_insertar_al_final()">Insertar al final</button>
+					<button type="button" class="btn btn-info" id="insertar-antes" onclick="lcsl_insertar_antes_X()">Insertar antes (x)</button>
+					<button type="button" class="btn btn-info" id="insertar-despues" onclick="lcsl_inserta_despues_X()">Insertar despues (x)</button>
 					<div class="col-12">
 						<br>
 						<h2 class="text-center">Eliminar Elementos:</h2>
 					</div>
-					<button type="button" class="btn btn-info" id="eliminar-inicio" onclick="elimina_inicio()">Eliminar Inicio</button>
-					<button type="button" class="btn btn-info" id="eliminar-final" onclick="elimina_ultimo()">Eliminar Final</button>
-					<button type="button" class="btn btn-info" id="eliminar-x" onclick="elimina_X()">Eliminar (X)</button>
-					<button type="button" class="btn btn-info" id="eliminar-antes" onclick="elimina_antes_X()">Eliminar Antes (x)</button>
-					<button type="button" class="btn btn-info" id="eliminar-despues" onclick="elimina_despues_X()">Eliminar Despues (x)</button>
+					<button type="button" class="btn btn-info" id="eliminar-inicio" onclick="lcsl_elimina_inicio()">Eliminar Inicio</button>
+					<button type="button" class="btn btn-info" id="eliminar-final" onclick="lcsl_elimina_ultimo()">Eliminar Final</button>
+					<button type="button" class="btn btn-info" id="eliminar-x" onclick="lcsl_elimina_X()">Eliminar (X)</button>
+					<button type="button" class="btn btn-info" id="eliminar-antes" onclick="lcsl_elimina_antes_X()">Eliminar Antes (x)</button>
+					<button type="button" class="btn btn-info" id="eliminar-despues" onclick="lcsl_elimina_despues_X()">Eliminar Despues (x)</button>
 				</div>
 			</div>
 			<div id="LstDobLig"  class="col-12 titulo">
