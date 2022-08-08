@@ -44,6 +44,20 @@
 			window.lcsl_elimina_antes_X = myListCir.elimina_antes_X;
 			window.lcsl_elimina_despues_X = myListCir.elimina_despues_X;
 
+			import * as myListDobl from './lib/LstDobleLig/index.js';
+
+			window.CANVAS3 = document.getElementById("tutorial3");
+
+			window.ldl_insertar_al_inicio = myListDobl.insertar_al_inicio;
+			window.ldl_insertar_al_final = myListDobl.insertar_al_final;
+			window.ldl_insertar_antes_X = myListDobl.insertar_antes_X;
+			window.ldl_inserta_despues_X = myListDobl.inserta_despues_X;
+			window.ldl_elimina_inicio = myListDobl.elimina_inicio;
+			window.ldl_elimina_ultimo = myListDobl.elimina_ultimo;
+			window.ldl_elimina_X = myListDobl.elimina_X;
+			window.ldl_elimina_antes_X = myListDobl.elimina_antes_X;
+			window.ldl_elimina_despues_X = myListDobl.elimina_despues_X;
+
 			import * as mostrar from './lib/mostrar.js';
 
 			window.LstSimpLig = mostrar.LstSimpLig;
@@ -124,24 +138,24 @@
 			<div id="LstDobLig"  class="col-12 titulo">
 				<br>
 				<h1 class="main_title">Lista Doblemente Ligada</h1>
-				<canvas id="tutorial" width="700" height="150"></canvas>
+				<canvas id="tutorial3" width="700" height="150"></canvas>
 				<div class="botones row justify-content-around">
 					<div class="col-12">
 						<h2 class="text-center">Agregar Elementos:</h2>
 					</div>
-					<button type="button" class="btn btn-info" id="insertar_inicio" onclick="insertar_al_inicio()">Insertar Inicio</button>
-					<button type="button" class="btn btn-info" id="insertar-final" onclick="insertar_al_final()">Insertar al final</button>
-					<button type="button" class="btn btn-info" id="insertar-antes" onclick="insertar_antes_X()">Insertar antes (x)</button>
-					<button type="button" class="btn btn-info" id="insertar-despues" onclick="inserta_despues_X()">Insertar despues (x)</button>
+					<button type="button" class="btn btn-info" id="insertar_inicio" onclick="ldl_insertar_al_inicio()">Insertar Inicio</button>
+					<button type="button" class="btn btn-info" id="insertar-final" onclick="ldl_insertar_al_final()">Insertar al final</button>
+					<button type="button" class="btn btn-info" id="insertar-antes" onclick="ldl_insertar_antes_X()">Insertar antes (x)</button>
+					<button type="button" class="btn btn-info" id="insertar-despues" onclick="ldl_inserta_despues_X()">Insertar despues (x)</button>
 					<div class="col-12">
 						<br>
 						<h2 class="text-center">Eliminar Elementos:</h2>
 					</div>
-					<button type="button" class="btn btn-info" id="eliminar-inicio" onclick="elimina_inicio()">Eliminar Inicio</button>
-					<button type="button" class="btn btn-info" id="eliminar-final" onclick="elimina_ultimo()">Eliminar Final</button>
-					<button type="button" class="btn btn-info" id="eliminar-x" onclick="elimina_X()">Eliminar (X)</button>
-					<button type="button" class="btn btn-info" id="eliminar-antes" onclick="elimina_antes_X()">Eliminar Antes (x)</button>
-					<button type="button" class="btn btn-info" id="eliminar-despues" onclick="elimina_despues_X()">Eliminar Despues (x)</button>
+					<button type="button" class="btn btn-info" id="eliminar-inicio" onclick="ldl_elimina_inicio()">Eliminar Inicio</button>
+					<button type="button" class="btn btn-info" id="eliminar-final" onclick="ldl_elimina_ultimo()">Eliminar Final</button>
+					<button type="button" class="btn btn-info" id="eliminar-x" onclick="ldl_elimina_X()">Eliminar (X)</button>
+					<button type="button" class="btn btn-info" id="eliminar-antes" onclick="ldl_elimina_antes_X()">Eliminar Antes (x)</button>
+					<button type="button" class="btn btn-info" id="eliminar-despues" onclick="ldl_elimina_despues_X()">Eliminar Despues (x)</button>
 				</div>
 			</div>
 			<div class="row justify-content-center">
